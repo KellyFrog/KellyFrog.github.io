@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>NOI Linux 使用指南 | CKFのblog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="本文将介绍 Linux(NOI Linux) 终端的一些基本语法。  cd  cd 命令是在终端下进入某个文件夹，用法是 cd 路径，比如： 12345cd abc 		#进入文件夹 abccd abc&#x2F;edf 	#进入 abc 的子文件夹 defcd .. 		#回到父文件夹（&#39;..&#39; 指代父文件夹）cd ..&#x2F;123 	#进入父文件夹的子文件夹 123cd">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NOI Linux 使用指南">
+<meta property="og:url" content="http://kellyfrog.github.io/2021/01/06/NOI-Linux-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/index.html">
+<meta property="og:site_name" content="CKFのblog">
+<meta property="og:description" content="本文将介绍 Linux(NOI Linux) 终端的一些基本语法。  cd  cd 命令是在终端下进入某个文件夹，用法是 cd 路径，比如： 12345cd abc 		#进入文件夹 abccd abc&#x2F;edf 	#进入 abc 的子文件夹 defcd .. 		#回到父文件夹（&#39;..&#39; 指代父文件夹）cd ..&#x2F;123 	#进入父文件夹的子文件夹 123cd">
+<meta property="og:locale">
+<meta property="article:published_time" content="2021-01-06T14:03:39.000Z">
+<meta property="article:modified_time" content="2021-01-06T14:04:05.142Z">
+<meta property="article:author" content="Chenkaifeng">
+<meta property="article:tag" content="教程">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="CKFのblog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">CKFのblog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">using namesapce std;</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://kellyfrog.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-NOI-Linux-使用指南" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/01/06/NOI-Linux-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" class="article-date">
+  <time class="dt-published" datetime="2021-01-06T14:03:39.000Z" itemprop="datePublished">2021-01-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      NOI Linux 使用指南
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>本文将介绍 <code>Linux(NOI Linux)</code> 终端的一些基本语法。</p>
+<ol>
+<li><code>cd</code></li>
+</ol>
+<p><code>cd</code> 命令是在终端下进入某个文件夹，用法是 <code>cd 路径</code>，比如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd abc 		#进入文件夹 abc</span><br><span class="line">cd abc&#x2F;edf 	#进入 abc 的子文件夹 def</span><br><span class="line">cd .. 		#回到父文件夹（&#39;..&#39; 指代父文件夹）</span><br><span class="line">cd ..&#x2F;123 	#进入父文件夹的子文件夹 123</span><br><span class="line">cd 			#回到 root 文件夹</span><br></pre></td></tr></table></figure>
+<ol>
+<li><code>ls</code> / <code>la</code></li>
+</ol>
+<p><code>ls</code> / <code>la</code> 命令是将当前文件夹内的所有文件列出来，其中 <code>la</code> 会显示隐藏的文件（不过 OI 上并没有什么特别的作用）</p>
+<ol>
+<li><code>mkdir</code></li>
+</ol>
+<p><code>mkdir</code> 命令是在终端下在当前文件夹下创建子文件夹，用法是 <code>mkdir 文件夹名</code>。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir aaa 	#创建一个名为 aaa 的文件夹</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li><code>cmp</code></li>
+</ol>
+<p><code>cmp</code> 命令是全文比较两个文件的，如果完全一致则不输出，否则输出第一个失配的字节。</p>
+<p>值得一提的是，如果你从 <code>c++</code> 中的 <code>system()</code> 函数执行此命令，你会得到一个返回值，如果匹配则为 0，否则不为 0。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cmp test.out test2.ans	#比较 test.out 和 test2.ans</span><br><span class="line">cmp bbb&#x2F;aa ..&#x2F;ccc&#x2F;dd	#比较 bbb 子文件夹下的 aa 文件和 父文件夹下 ccc 子文件夹的 dd 文件</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li><code>diff</code></li>
+</ol>
+<p>用法和 <code>cmp</code> 类似，只不过是全文比较，会输出所有失配的地方，一般 OI 中有用的参数只有 <code>-a</code>、<code>-i</code>。</p>
+<p>事实上，同 <code>cmp</code>，用 <code>system()</code> 调用一样会有返回值，应该和 <code>cmp</code> 一致。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">diff a b		#全文比较 a 和 b（包括行尾空格和换行符）</span><br><span class="line">diff -a c d		#全文比较 c 和 d（忽略行尾空格和换行符）</span><br><span class="line">diff -i e f		#全文比较 e 和 f（大小写不敏感，包括行尾空格和换行符）</span><br><span class="line">diff -a -i g h	#全文比较 g 和 h（大小写不敏感，忽略行尾空格和换行符）</span><br></pre></td></tr></table></figure>
+<ol>
+<li><code>clear</code></li>
+</ol>
+<p>清屏。</p>
+<ol>
+<li><code>g++</code> 编译</li>
+</ol>
+<p>基本用法：<code>g++ -o 执行文件名 源文件名 参数</code>，意将 <code>源文件名</code>（必须是<code>.cpp</code>）通过附加 <code>参数</code> 的选项，编译为 <code>执行文件名</code>。</p>
+<p>或者直接 <code>g++ 源文件名 参数</code>，将 <code>源文件名</code> 编译为 <code>a.out</code> 的可执行文件。</p>
+<p><strong><code>Linux</code> 下的可执行文件的扩展名不一定是 <code>.exe</code></strong></p>
+<p>一般有以下有用的参数。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>-std=c++11/14/17</code></td>
+<td style="text-align:center">用 <code>c++11/14/17</code> 标准编译（<strong><code>NOI Linux</code> 上的 <code>g++ 4.8.4</code> 只支持 <code>c++11</code></strong>）</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-O2</code></td>
+<td style="text-align:center">开启 <code>O2</code> 优化</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-Wall</code></td>
+<td style="text-align:center">开启全部警告（如未使用变量、未返回的函数等）</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-lm</code></td>
+<td style="text-align:center">未知</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>需要注意的是，测评时如果没有特殊说明，是没有任何优化（参数）的。</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">g++ -o xxx.exe xxx.cpp			#将 xxx.cpp 编译为可执行文件 xxx.exe</span><br><span class="line">g++ -o a.fuck a.cpp -std&#x3D;c++11	#将 a.cpp 编译为可执行文件 a.fuck，开启 c++11</span><br></pre></td></tr></table></figure>
+<ol>
+<li>在终端下运行可执行文件</li>
+</ol>
+<p>基本用法：<code>./文件名 (&lt; input) (&gt; output)</code>，其中 <code>文件名</code> 是可执行文件名，后面如果有 <code>&lt; input</code> 就是将 <code>input</code> 文件作为 <code>stdin</code> 读入，否则从终端读入 <code>stdin</code>；同理，如果有 <code>&gt; output</code> 则是将 <code>stdout</code> 输出到 <code>output</code>，否则直接输出到终端。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;exe							#运行名为 exe 的文件</span><br><span class="line">.&#x2F;a.out &lt; in					#运行名为 a.out 的文件，从 in 读入 stdin</span><br><span class="line">.&#x2F;gift.exe &gt; out				#运行名为 gift.exe 的文件，输出到 out</span><br><span class="line">.&#x2F;src.exe &lt; test.in &gt; test.out	#运行名为 src.exe 的文件，从 test.in 读入，输出到 test.out</span><br></pre></td></tr></table></figure>
+<ol>
+<li><code>Tab</code> 键的自动补全</li>
+</ol>
+<p>在输入命令的时候，<code>Tab</code> 键会帮助我们自动联想，如果只有一个合法选项，则会直接补全，建议多尝试尝试。</p>
+<p>附：<code>c++</code> 中 <code>system()</code> 的用法和对拍器。</p>
+<p><code>system()</code> 定义为 <code>int system(const char *)</code>，中间的是一个字符串，表示需要执行的命令，语法同上面的终端语法，之后会有一个范围值，为命令执行的返回值。</p>
+<p>对拍器（<code>c++</code>，默认所有的生成器和程序都是 <code>stdin/stdout</code>）<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> T = <span class="number">1000</span>; 	<span class="comment">//对拍 1000 组，可以调。</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> test = <span class="number">1</span>; test &lt;= T; test++) &#123;</span><br><span class="line">		<span class="comment">//下面所有的文件名都可以换成自己的</span></span><br><span class="line">		system(<span class="string">&quot;./gen.exe &gt; testin&quot;</span>); 					<span class="comment">//通过生成器 gen.exe 生成数据输出到 testin</span></span><br><span class="line">		system(<span class="string">&quot;./source.exe &lt; testin &gt; outfile&quot;</span>); 		<span class="comment">//运行需要对拍的程序 source.exe，输入 testin，输出到 outfile</span></span><br><span class="line">		system(<span class="string">&quot;./bruteforce.exe &lt; testin &gt; ansfile&quot;</span>);	<span class="comment">//运行暴力程序 bruteforces.exe，输入 testin，输出到 ansfile</span></span><br><span class="line">		<span class="keyword">if</span>(system(<span class="string">&quot;cmp outfile ansfile&quot;</span>)) &#123; 			<span class="comment">//比较暴力结果和程序结果的不同，有不同会返回1</span></span><br><span class="line">			<span class="built_in">cerr</span> &lt;&lt; <span class="string">&quot;Wrong Answer on test #&quot;</span> &lt;&lt; test &lt;&lt; <span class="string">&quot;!!!\n&quot;</span>;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cerr</span> &lt;&lt; <span class="string">&quot;OK passed &quot;</span> &lt;&lt; T &lt;&lt; <span class="string">&quot; test(s)\n&quot;</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>附2：<code>emacs</code> 使用指南（比 <code>GUIDE</code> 高到不知哪里去了）</p>
+<p>从终端召唤 <code>emacs</code>：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">emacs 文件名 &amp;		#用 emacs 打开 文件名，没有则新建一个。注意这个 &amp; 一定要写，否则终端将会锁死，想要继续使用终端只能摁 ctrl+c 杀掉 emacs。              </span><br></pre></td></tr></table></figure><br>打开了之后下面会有一坨非常烦人的东西，记得勾上“do not show me again”或者类似的东西然后把它差掉。</p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/paste/b84qw16g">这里</a>是 <code>emacs</code> 官方给的新手指南，但它太长了，一点也不新手，于是最主要的快捷键有：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ctrl+x+s	#摁住 ctrl，x 和 s 依次摁下去，意为保存</span><br><span class="line">alt+w		#摁住 alt，然后摁 w，意为复制</span><br><span class="line">ctrl+y		#摁住 ctrl，然后摁 y，意为粘贴</span><br></pre></td></tr></table></figure><br>然后你就学会了基本要用到的 <code>emacs</code> 使用技巧。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://kellyfrog.github.io/2021/01/06/NOI-Linux-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" data-id="ckjlht8we00013cwk88esf8ix" data-title="NOI Linux 使用指南" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2021/01/06/CSP-2020-%E6%B8%B8%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">CSP-2020 游记</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%B6%E4%BB%96/" rel="tag">其他</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%85%B6%E4%BB%96/" style="font-size: 10px;">其他</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 10px;">教程</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 10px;">题解</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/01/06/NOI-Linux-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">NOI Linux 使用指南</a>
+          </li>
+        
+          <li>
+            <a href="/2021/01/06/CSP-2020-%E6%B8%B8%E8%AE%B0/">CSP-2020 游记</a>
+          </li>
+        
+          <li>
+            <a href="/2021/01/06/%E9%A2%98%E8%A7%A3-P2605-%E3%80%90-ZJOI2010-%E5%9F%BA%E7%AB%99%E9%80%89%E5%9D%80%E3%80%91/">题解 P2605 【[ZJOI2010]基站选址】</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 Chenkaifeng<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script> 
+<!--script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>
