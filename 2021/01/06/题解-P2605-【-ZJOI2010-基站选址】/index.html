@@ -4,22 +4,22 @@
   <meta charset="utf-8">
   
   
-  <title>题解 P2605 【[ZJOI2010]基站选址】 | Hexo</title>
+  <title>题解 P2605 【[ZJOI2010]基站选址】 | CKFのBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="感觉没有黑题的难度吧……. 我们首先考虑一个朴素的 DP，一个很显然的想法就是让 $dp_{i,j}$ 表示前 $i$ 个位置，放了 $j$ 个基站，补偿仅考虑下标 $[1,i]$ 中的点的最小花费。 这样我们再从 $i’$ 转移到 $i$ 的时候，再统计下标在 $[i’+1,i-1]$ 中的点的补偿就可以了，不难列出转移方程： $$dp_{i,j}&#x3D;\min_{1\le i’&lt;i}{dp_">
 <meta property="og:type" content="article">
 <meta property="og:title" content="题解 P2605 【[ZJOI2010]基站选址】">
-<meta property="og:url" content="http://kellyfrog.github.io/2021/01/06/%E9%A2%98%E8%A7%A3-P2605-%E3%80%90-ZJOI2010-%E5%9F%BA%E7%AB%99%E9%80%89%E5%9D%80%E3%80%91/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:url" content="http://example.com/2021/01/06/%E9%A2%98%E8%A7%A3-P2605-%E3%80%90-ZJOI2010-%E5%9F%BA%E7%AB%99%E9%80%89%E5%9D%80%E3%80%91/index.html">
+<meta property="og:site_name" content="CKFのBlog">
 <meta property="og:description" content="感觉没有黑题的难度吧……. 我们首先考虑一个朴素的 DP，一个很显然的想法就是让 $dp_{i,j}$ 表示前 $i$ 个位置，放了 $j$ 个基站，补偿仅考虑下标 $[1,i]$ 中的点的最小花费。 这样我们再从 $i’$ 转移到 $i$ 的时候，再统计下标在 $[i’+1,i-1]$ 中的点的补偿就可以了，不难列出转移方程： $$dp_{i,j}&#x3D;\min_{1\le i’&lt;i}{dp_">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale">
 <meta property="article:published_time" content="2021-01-06T09:25:52.000Z">
 <meta property="article:modified_time" content="2021-01-06T09:26:22.121Z">
 <meta property="article:author" content="Chenkaifeng">
 <meta property="article:tag" content="题解">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="CKFのBlog" type="application/atom+xml">
   
   
     <link rel="shortcut icon" href="/favicon.png">
@@ -47,8 +47,12 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">CKFのBlog</a>
       </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">using namesapce std;</a>
+        </h2>
       
     </div>
     <div id="header-inner" class="inner">
@@ -67,7 +71,7 @@
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://KellyFrog.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
       </div>
     </div>
   </div>
@@ -114,7 +118,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://kellyfrog.github.io/2021/01/06/%E9%A2%98%E8%A7%A3-P2605-%E3%80%90-ZJOI2010-%E5%9F%BA%E7%AB%99%E9%80%89%E5%9D%80%E3%80%91/" data-id="ckjl7w0s00000j8wk5ten3tsb" data-title="题解 P2605 【[ZJOI2010]基站选址】" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/01/06/%E9%A2%98%E8%A7%A3-P2605-%E3%80%90-ZJOI2010-%E5%9F%BA%E7%AB%99%E9%80%89%E5%9D%80%E3%80%91/" data-id="ckjl7w0s00000j8wk5ten3tsb" data-title="题解 P2605 【[ZJOI2010]基站选址】" class="article-share-link">Share</a>
       
       
       
@@ -221,5 +225,22 @@
 
 
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script> 
+<!--script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 </body>
 </html>
