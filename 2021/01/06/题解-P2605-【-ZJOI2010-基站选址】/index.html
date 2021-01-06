@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   
   
-  <title>题解 P2605 【[ZJOI2010]基站选址】 | CKF��blog</title>
+  <title>题解 P2605 【[ZJOI2010]基站选址】 | CKFのblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="感觉没有黑题的难度吧……. 我们首先考虑一个朴素的 DP，一个很显然的想法就是让 $dp_{i,j}$ 表示前 $i$ 个位置，放了 $j$ 个基站，补偿仅考虑下标 $[1,i]$ 中的点的最小花费。 这样我们再从 $i’$ 转移到 $i$ 的时候，再统计下标在 $[i’+1,i-1]$ 中的点的补偿就可以了，不难列出转移方程： $$dp_{i,j}&#x3D;\min_{1\le i’&lt;i}{dp_">
 <meta property="og:type" content="article">
 <meta property="og:title" content="题解 P2605 【[ZJOI2010]基站选址】">
 <meta property="og:url" content="http://example.com/2021/01/06/%E9%A2%98%E8%A7%A3-P2605-%E3%80%90-ZJOI2010-%E5%9F%BA%E7%AB%99%E9%80%89%E5%9D%80%E3%80%91/index.html">
-<meta property="og:site_name" content="CKF��blog">
+<meta property="og:site_name" content="CKFのblog">
 <meta property="og:description" content="感觉没有黑题的难度吧……. 我们首先考虑一个朴素的 DP，一个很显然的想法就是让 $dp_{i,j}$ 表示前 $i$ 个位置，放了 $j$ 个基站，补偿仅考虑下标 $[1,i]$ 中的点的最小花费。 这样我们再从 $i’$ 转移到 $i$ 的时候，再统计下标在 $[i’+1,i-1]$ 中的点的补偿就可以了，不难列出转移方程： $$dp_{i,j}&#x3D;\min_{1\le i’&lt;i}{dp_">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-01-06T09:25:52.000Z">
@@ -19,7 +19,7 @@
 <meta property="article:tag" content="题解">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="CKF��blog" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="CKFのblog" type="application/atom+xml">
   
   
     <link rel="shortcut icon" href="/favicon.png">
@@ -47,7 +47,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">CKF��blog</a>
+        <a href="/" id="logo">CKFのblog</a>
       </h1>
       
         <h2 id="subtitle-wrap">
