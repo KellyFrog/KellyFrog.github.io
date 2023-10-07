@@ -16,21 +16,22 @@
   <meta name="author" content="Chen Kaifeng">
   <meta name="keywords" content="">
   
-    <meta name="description" content="可能会写点 OI、写点游戏、写点桥牌">
+    <meta name="description" content="最近打了很多牌，感觉主要还是太随意了一点，精确叫牌法确实是个不错的体系，好就好在很精确，随便写点东西介绍一下。 0. 整体结构新睿所用的精确是一种 5 张高花、2 盖 1 逼局的精确叫牌法，下面是开叫的叫品（点均指大牌点）：  1C：16 点以上的任意牌（除 2NT） 1D：11-15 点，2 张以上方片（11-15 点没有其他开叫叫品的牌） 1H&#x2F;1S：11-15 点，5 张以上套 1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello22">
-<meta property="og:url" content="https://kellyfrog.github.io/2023/10/05/Hello22/index.html">
+<meta property="og:title" content="精确叫牌法">
+<meta property="og:url" content="https://kellyfrog.github.io/2023/10/05/%E7%B2%BE%E7%A1%AE%E5%8F%AB%E7%89%8C%E6%B3%95/index.html">
 <meta property="og:site_name" content="KellyFrog 的博客">
-<meta property="og:description" content="可能会写点 OI、写点游戏、写点桥牌">
+<meta property="og:description" content="最近打了很多牌，感觉主要还是太随意了一点，精确叫牌法确实是个不错的体系，好就好在很精确，随便写点东西介绍一下。 0. 整体结构新睿所用的精确是一种 5 张高花、2 盖 1 逼局的精确叫牌法，下面是开叫的叫品（点均指大牌点）：  1C：16 点以上的任意牌（除 2NT） 1D：11-15 点，2 张以上方片（11-15 点没有其他开叫叫品的牌） 1H&#x2F;1S：11-15 点，5 张以上套 1">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-10-05T09:16:18.000Z">
-<meta property="article:modified_time" content="2023-10-05T09:16:18.756Z">
+<meta property="article:published_time" content="2023-10-05T09:56:12.000Z">
+<meta property="article:modified_time" content="2023-10-05T10:10:29.797Z">
 <meta property="article:author" content="Chen Kaifeng">
+<meta property="article:tag" content="桥牌">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Hello22 - KellyFrog 的博客</title>
+  <title>精确叫牌法 - KellyFrog 的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +197,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello22"></span>
+            <span id="subtitle" data-typed-text="精确叫牌法"></span>
           
         </div>
 
@@ -207,7 +208,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-10-05 17:16" pubdate>
+        <time datetime="2023-10-05 17:56" pubdate>
           2023年10月5日 下午
         </time>
       </span>
@@ -219,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          495 字
         
       </span>
     
@@ -230,7 +231,7 @@
         
         
         
-          1 分钟
+          5 分钟
         
       </span>
     
@@ -267,12 +268,41 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Hello22</h1>
+            <h1 id="seo-header">精确叫牌法</h1>
             
             
               <div class="markdown-body">
                 
-                
+                <p>最近打了很多牌，感觉主要还是太随意了一点，精确叫牌法确实是个不错的体系，好就好在很精确，随便写点东西介绍一下。</p>
+<h3 id="0-整体结构"><a href="#0-整体结构" class="headerlink" title="0. 整体结构"></a>0. 整体结构</h3><p>新睿所用的精确是一种 5 张高花、2 盖 1 逼局的精确叫牌法，下面是开叫的叫品（点均指大牌点）：</p>
+<ul>
+<li>1C：16 点以上的任意牌（除 2NT）</li>
+<li>1D：11-15 点，2 张以上方片（11-15 点没有其他开叫叫品的牌）</li>
+<li>1H&#x2F;1S：11-15 点，5 张以上套</li>
+<li>1NT：13-15 点，均型</li>
+<li>2C：11-15 点，5 张草花且有一门 4 张以上高花或 6 张以上草花</li>
+<li>2D：11-15 点，4441 或 5440，方片单缺</li>
+<li>2NT：20-21 点，均型</li>
+<li>2H 以上的其他叫品：阻击</li>
+</ul>
+<p>可以发现，除了 1C 以外都是限制性很强的叫品，这些开叫都很好能判断是否成局、是否有满贯。</p>
+<p>但需要注意的是新睿精确对于满贯试探仍然比较粗糙，现代精确广泛使用的“控制问叫”（A 为 2 个控制、K 为一个控制）和“制定控制问叫”并没有集成在其中，对于关键张的演变也较为简化。</p>
+<p>新睿精确对于满贯叫牌有如下探查手段：</p>
+<ul>
+<li>4C 戈博问叫</li>
+<li>4NT 罗马关键张</li>
+<li>4X&#x2F;5X 跳叫排除关键张</li>
+<li>扣叫</li>
+<li>满贯邀叫</li>
+</ul>
+<p>事实上还有其他的可以使用的探查方式：</p>
+<ul>
+<li>控制问叫</li>
+<li>将牌问叫</li>
+<li>大满贯逼叫</li>
+</ul>
+<p>可以自行约定。</p>
+
                 
               </div>
             
@@ -280,6 +310,13 @@
             <div>
               <div class="post-metas my-3">
   
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E6%A1%A5%E7%89%8C/" class="print-no-link">#桥牌</a>
+      
+    </div>
   
 </div>
 
@@ -289,8 +326,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello22</div>
-      <div>https://kellyfrog.github.io/2023/10/05/Hello22/</div>
+      <div>精确叫牌法</div>
+      <div>https://kellyfrog.github.io/2023/10/05/精确叫牌法/</div>
     </div>
     <div class="license-meta">
       
@@ -334,18 +371,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/10/05/%E7%B2%BE%E7%A1%AE%E5%8F%AB%E7%89%8C%E6%B3%95/" title="精确叫牌法">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">精确叫牌法</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/10/05/Hello/" title="Hello">
-                        <span class="hidden-mobile">Hello</span>
+                      <a href="/2023/10/05/Hello22/" title="Hello22">
+                        <span class="hidden-mobile">Hello22</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
