@@ -1,0 +1,29 @@
+baseURL: https://KellyFrog.github.io
+languageCode: en-us
+title: KellyFrog's Blog
+theme: ["PaperMod"]
+
+enableRobotsTXT: true
+
+caches:
+  images:
+    dir: :cacheDir/images
+
+params:
+  env: production
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
